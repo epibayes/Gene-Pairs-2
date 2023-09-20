@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "gene-pairs"
+version = "0.1.0"
+description = "PyStan implementation and extension of GenePairs by Josh Warren"
+authors = ["chathasphere <pgchatha@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+pystan = "^3.7.0"
+numpy = "^1.25.2"
+jupyter = "^1.0.0"
+scipy = "^1.11.2"
+nest-asyncio = "^1.5.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
