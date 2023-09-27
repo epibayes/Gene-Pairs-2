@@ -25,6 +25,7 @@ parameters {
     real<lower=0> ell; // GP kernel length scale
     vector[N] zeta;
     vector[N] eta;
+    vector[N] theta;
 
 }
 
@@ -58,7 +59,6 @@ model {
     for (q in 1:Q)
         gamma[q] ~ normal(0, 100^2);
 
-    vector[N] theta;
     theta = eta + zeta;
 
 
